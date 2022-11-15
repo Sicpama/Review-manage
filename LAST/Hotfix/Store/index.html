@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사장님-리뷰확인</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <container class="container">
+    <header class="header">
+        <img class="headerImg" src="../Customer/image/back.png">
+        <h1 class="headerH">리뷰관리</h1>
+        <span class="headerSpanOne">리뷰현황</span><span class="headerSpanTwo">질문관리 &nbsp;직접입력 리뷰</span>
+        <img class="cal" src="./image/cal.png">
+    </header>
+    <article>
+        <div class="review">
+            <span class="reviewCount">리뷰 수</span><span class="Count">185건</span><br>
+            <span class="reviewCount2">주문대비 리뷰 응답률</span><span class="Count2">30%</span>
+        </div>
+        
+            <h2 class="latleyRe">최근 직접입력 리뷰</h2>
+            <div class="lately">
+                <span class="girlCus">20대 여성 고객</span><span class="girlCus2">05월12일</span><br>
+                <span class="claim">직원들이 손님이 와도 인사도 안하고<br> 시큰둥해서 아쉬웠어요ㅠㅠ</span>
+               <img src="./image/review.png" alt="">
+               <hr>
+               <p>더보기</p>
+            </div>
+    
+        <div>
+            <h2 class="latleyRe2">많이 나온 단어</h2>
+            <!-- 파이썬 워드클라우드 넣는자리 -->
+            <div class="wordCloud">
+                <py-script>print('Hello, World!')</py-script>
+            </div>
+        </div>
+        <section>
+            <h2 class="latleyRe3">리뷰 반응</h2>
+            <div class="howToTaste">
+                <span>매장 분위기는 어땠나요?</span>
+                <div class="zt-span6 last">
+                    <div class="zt-skill-bar">
+                        <div data-width="80" style="">너무 좋아요
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <img src="../Customer/image/down.png" alt="">
+            </div>
+            <div class="howToTaste2">
+                <span>맛은 어땠나요?</span>
+                <div class="zt-span6 last">
+                    <div class="zt-skill-bar">
+                        <div data-width="80" style="">취향저격이에요~
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="zt-skill-bar">
+                        <div data-width="50" style="">신맛이 너무 강해요
+                            <span>50%</span>
+                        </div>
+                    </div>
+                    <div class="zt-skill-bar">
+                        <div data-width="63" style="">향이 너무 좋아요
+                            <span>63%</span>
+                        </div>
+                    </div>
+                    <div class="zt-skill-bar">
+                        <div data-width="79" style="">양이 너무 적어요
+                            <span>79%</span>
+                        </div>
+                    </div>
+                    <div class="zt-skill-bar">
+                        <div data-width="90" style="">디저트 맛집이에요~
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="zt-skill-bar">
+                        <div data-width="33" style="">별로에요
+                            <span>33%</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <img src="../Customer/image/down.png" alt="">
+            </div>
+        </section>
+        <div class="footer"></div>
+    </article>
+    
+</container>
+    <script>
+       (function( $ ) {
+    "use strict";
+    $(function() {
+        function animated_contents() {
+            $(".zt-skill-bar > div ").each(function (i) {
+                var $this  = $(this),
+                    skills = $this.data('width');
+
+                $this.css({'width' : skills + '%'});
+
+            });
+        }
+        
+        if(jQuery().appear) {
+            $('.zt-skill-bar').appear().on('appear', function() {
+                animated_contents();
+            });
+        } else {
+            animated_contents();
+        }
+    });
+}(jQuery));
+  </script>
+</body>
+</html>
