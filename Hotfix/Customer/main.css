@@ -1,0 +1,207 @@
+.container{
+    display: block;
+    margin: 0 auto;
+}
+.header{
+width: 100%;
+height: 80px;
+/* background-color: aqua; */
+}
+.headerImg{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.headerH{
+    text-align: center;
+    margin-top: -23px;
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    align-items: center;
+}
+.enjoyPart{
+    background: rgba(116, 90, 53, 0.2);
+    border-radius: 8px;
+    width: 343px;
+    height: 108px;
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+}
+.enjoyPart > p{
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    padding: 20px 0 0 20px;
+}
+.enjoyPart > h3{
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0 0 20px;
+}
+.enjoyPart > img{
+    margin-left: 200px;
+    margin-top: -83px;
+    margin-bottom: 20%;
+}
+.proflePart{
+    width: 300px;
+    height: 50px;
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+.proflePart > span{
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+    color: #231F20;
+    opacity: 0.7;
+}
+.proflePart > .downBtn{
+    position: relative;
+    left: 30px;
+    bottom: 15px;
+}
+.coffee{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 33px;
+    width: 343px;
+    height: 206px;
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+.coffee > span{
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000;
+    position: relative;
+    left: 4.66%;
+    right: 57.43%;
+    top: 8.25%;
+    bottom: 84.47%;
+}
+.coffee > hr{
+    position: relative;
+    top: 20px;
+    
+}
+.coffee > .fountain{
+    position: relative;
+    left: 50%;
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    color: #C4C4C4;
+}
+.coffee > .fountain2{
+    position: relative;
+    left: 40%;
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    color: #C4C4C4;
+}
+.coffee > .fountain3{
+    position: relative;
+    left: 25%;
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: right;
+    color: #C4C4C4;
+}
+.coffee > .selectBox{
+    position: relative;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    display: inline-block;
+    width: 310px;
+    height: 145px;
+}
+.coffee > input{
+    position: relative;
+    top: 26px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 130px;
+    background: #EFEFEF;
+    border-radius: 8px;
+    border: none;
+}
+.div2 {
+    width: 135px;
+    height: 36px;
+    background: #EFEFEF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .clicked {
+    width: 135px;
+    height: 36px;
+    background: #745A35;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+  }
+  .submit{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    width: 343px;
+    top: 56px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #C4C4C4;
+  }

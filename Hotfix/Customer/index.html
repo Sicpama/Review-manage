@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객용-리뷰쓰기</title>
+    <link rel="stylesheet" href="./main.css">
+    
+</head>
+<body>
+    <container class="container">
+    <header class="header">
+        <img class="headerImg" src="../Customer/image/back.png">
+        <h1 class="headerH">리뷰쓰기</h1>
+    </header>
+    <div class="enjoyPart">
+        <p>즐거운 시간 보내셨나요?<br> 솔직한! 리뷰 부탁드려요!</p>
+        <h3>사장님만 보이는 찐 리뷰!</h3>
+        <img src="../Customer/image/IconAll.png">
+    </div>
+    <div class="proflePart">
+        <img src="../Customer/image/profile.png">
+        <span>아메리카노 외3건</span>
+        <img class="downBtn" src="../Customer/image/down.png">
+    </div>
+    <article>
+        <div class="coffee">
+            <span>커피맛은 어땠나요?</span>
+            <span class="fountain">1/3</span>
+            <hr>
+            <div class="selectBox">
+                <div class="div2">탄향이 좀 나요</div>
+                <div class="div2">완전 제 취향~</div>
+                <div class="div2">연해요</div>
+                <div class="div2">신맛이 너무 나요</div>
+            </div>
+        </div>
+        <div class="coffee">
+            <span>매장 분위기는 어땠나요?</span>
+            <span class="fountain2">2/3</span>
+            <hr>
+            <div class="selectBox">
+                <div class="div2">조용해요</div>
+                <div class="div2">완전 제 취향~</div>
+                <div class="div2">깨끗해요</div>
+                <div class="div2">지저분해요</div>
+            </div>
+        </div>
+        <div class="coffee">
+            <span>직접 입력하기</span>
+            <span class="fountain3">선택사항(최대 250자)</span>
+            <hr>
+           <input type="text">
+        </div>
+    </article>
+    <footer>
+        <button class="submit" type="button">
+            <img src="./image/write.png">
+            작성완료
+        </button>
+    </footer>
+</container>
+    <script>
+        var div2 = document.getElementsByClassName("div2");
+          function handleClick(event) {
+
+          if (event.target.classList[1] === "clicked") {
+              event.target.classList.remove("clicked");
+          } else {
+              for (var i = 0; i < div2.length; i++) {
+              div2[i].classList.remove("clicked");
+              }
+
+              event.target.classList.add("clicked");
+          }
+          }
+
+          function init() {
+          for (var i = 0; i < div2.length; i++) {
+              div2[i].addEventListener("click", handleClick);
+          }
+          }
+
+          init();
+  </script>
+</body>
+</html>
